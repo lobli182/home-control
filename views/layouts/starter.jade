@@ -1,0 +1,66 @@
+extends master
+
+append styles
+	// Custom styles for this template
+	link(href='../../css/home-control.css', rel='stylesheet')
+	link(href='../../css/clean-blog.css', rel='stylesheet')
+	//Custom Fonts
+	link(href='../../css/font-awesome.min.css', rel='stylesheet')
+	link(href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic', rel='stylesheet')
+	link(href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800', rel='stylesheet')
+
+append body
+	nav.navbar.navbar-inverse.navbar-custom.navbar-fixed-top
+		.container-fluid
+			// Brand and toggle get grouped for better mobile display
+			.navbar-header.page-scroll
+				button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+					span.sr-only Toggle navigation
+					|                     Menu
+					i.fa.fa-bars
+				a.navbar-brand(href='index.html') Home Control
+				// Collect the nav links, forms, and other content for toggling
+			#bs-example-navbar-collapse-1.collapse.navbar-collapse
+				ul.nav.navbar-nav.navbar-right
+					li
+						a(href='/') Inicio
+					li
+						a(href='/nosotros') Nosotros
+					li
+						a(href='/productos') Productos
+					li
+						a(href='/usos') Usos
+					li
+						a(href='/soporte') Soporte
+					li
+						a(href='/noticias') Noticias
+					li
+						a(href='/contacto') Contacto
+	block body-content
+
+	footer
+		.container
+			hr.featurette-divider
+			.row
+				.col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+					ul.list-inline.text-center
+						li
+							a(href='#')
+								span.fa-stack.fa-lg
+									i.fa.fa-circle.fa-stack-2x
+									i.fa.fa-twitter.fa-stack-1x.fa-inverse
+						li
+							a(href='#')
+								span.fa-stack.fa-lg
+									i.fa.fa-circle.fa-stack-2x
+									i.fa.fa-facebook.fa-stack-1x.fa-inverse
+						li
+							a(href='#')
+								span.fa-stack.fa-lg
+									i.fa.fa-circle.fa-stack-2x
+									i.fa.fa-github.fa-stack-1x.fa-inverse
+					p.copyright.text-muted Copyright © Home Control 2017
+
+
+append scripts
+	script(src="../../js/starter.js")
