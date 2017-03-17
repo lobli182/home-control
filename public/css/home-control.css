@@ -1,6 +1,6 @@
 body {
   padding-top: 50px;
-  background-color: #fff;
+  /*background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, rgba(217, 217, 217, 0.2) 75%, rgba(188, 188, 188, 0) 100%);*/
 }
 
 .hidden {
@@ -53,6 +53,10 @@ hr.navbar-divider {
 
 .product-element {
 	margin-top: 20px;
+}
+
+.carousel.products a{
+	background: inherit;
 }
 
 @media (max-width: 991px) {

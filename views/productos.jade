@@ -6,7 +6,7 @@ append body-content
 
 		for product in products
 			.col-md-4.product-element
-				.carousel.slide(data-ride='carousel', id=product.id)
+				.carousel.products.slide(data-ride='carousel', id=product.id, data-interval="false")
 					// Indicators
 					ol.carousel-indicators
 						li.active(data-target='#' + product.id, data-slide-to='0')
