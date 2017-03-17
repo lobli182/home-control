@@ -77,6 +77,10 @@ var products = [
 	}
 ];
 
+router.get('/health', function(req, res, next) {
+  res.send({ health: "active" });
+});
+
 router.get('/productos', function(req, res, next) {
   res.render('productos', { products: products, productos: "active" });
 });
