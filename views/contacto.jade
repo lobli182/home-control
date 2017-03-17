@@ -2,5 +2,37 @@ extends layouts/starter
 
 append body-content
 	.container
-		h1= "contacto"
-		p Welcome to contacto
+		h1 ¿Cómo contactarnos?
+
+		.col-md-12
+			#success-message.hidden
+				label Tu consulta ha sido enviada.
+
+			.form-area
+				form(role='form')
+					br(style='clear:both')
+					.form-group
+						input#name.form-control(type='text', name='name', placeholder='Nombre', required='', oninvalid="this.setCustomValidity('Por favor ingrese su nombre')", oninput="setCustomValidity('')")
+					.form-group
+						input#email.form-control(type='email', name='email', placeholder='Email', required='', oninvalid="this.setCustomValidity('Por favor ingrese su email')", oninput="setCustomValidity('')")
+					.form-group
+						select#subject.form-control(name='subject', required='', oninvalid="this.setCustomValidity('Por favor seleccione un valor')", oninput="setCustomValidity('')")
+							option(selected='', value='')
+								| Tipo de consulta:
+							option(value='comercial')
+								| Comercial
+							option(value='technical')
+								| Técnica
+							option(value='other')
+								| Other
+					.form-group
+						textarea#message.form-control(name='message', type='textarea', placeholder='Mensaje', maxlength='140', rows='7', required='', oninvalid="this.setCustomValidity('Por favor ingrese su mensaje')", oninput="setCustomValidity('')")
+						span.help-block
+						p#characterLeft.help-block Has alcanzado el máximo de 140 caracteres.
+					button#submit.btn.btn-primary.pull-right(type='submit', name='submit') Enviar
+
+
+
+
+append scripts
+	script(src="../../js/contact.js")

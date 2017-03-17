@@ -2,5 +2,31 @@ extends layouts/starter
 
 append body-content
 	.container
-		h1= "productos"
-		p Welcome to #{productos}
+		h1 Conoce nuestros productos
+
+		for product in products
+			.col-md-4.product-element
+				.carousel.slide(data-ride='carousel', id=product.id)
+					// Indicators
+					ol.carousel-indicators
+						li.active(data-target='#' + product.id, data-slide-to='0')
+						li(data-target='#' + product.id, data-slide-to='1')
+						li(data-target='#' + product.id, data-slide-to='2')
+					.carousel-inner.products-images(role='listbox')
+						.item.active
+							img.carousel-img.first-slide(src=product.image1, alt='First slide')
+						.item
+							img.carousel-img.second-slide(src=product.image2, alt='Second slide')
+						.item
+							img.carousel-img.third-slide(src=product.image3, alt='Third slide')
+
+					a.left.carousel-control(href='#' + product.id, role='button', data-slide='prev')
+						span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+						span.sr-only Previous
+					a.right.carousel-control(href='#' + product.id, role='button', data-slide='next')
+						span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+						span.sr-only Next
+
+
+				label.product-name #{product.name}
+				p.product-description #{product.description}

@@ -2,5 +2,25 @@ extends layouts/starter
 
 append body-content
 	.container
-		h1= "Nosotros"
-		p Welcome to nosotros
+		.row.featurette
+			.col-md-7
+				h2.featurette-heading
+					| Quienes Somos
+				p.lead
+					| Somos una empresa especializada en la importación de artículos de Domótica especialmente accesibles. Nos dedicamos a llevar el futuro a manos de cualquier usuario de la manera más económica, rápida y eficaz.
+
+					| Destacamos nuestro amor por la automatización y tecnología desde el momento de su compra a través de la Web, transformándola en un proceso simple, seguro y de rápida entrega.
+
+			.col-md-5
+				img.featurette-image.img-responsive.center-block(alt='quienes somos', src='images/Nosotros_1.jpg')
+
+		hr.featurette-divider
+
+		.row.featurette
+			.col-md-7.col-md-push-5
+				h2.featurette-heading
+					| Compromiso
+				p.lead
+					| Todos nuestros sistemas eléctricos y de iluminación cumplen con los principales estándares internacionales de seguridad y calidad, ROHS, CE.
+			.col-md-5.col-md-pull-7
+				img.featurette-image.img-responsive.center-block(alt='quienes somos', src='images/Nosotros_2.gif')

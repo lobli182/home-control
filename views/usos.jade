@@ -1,6 +1,51 @@
 extends layouts/starter
 
 append body-content
+	.image-uses
+		img(src='images/Usos.jpg', alt='First slide')
+
 	.container
-		h1= "usos"
-		p Welcome to usos
+
+		h1 Usos Útiles
+
+		hr.featurette-divider
+
+		h3 IFTTT (If This, Then That)
+		.col-md-10
+			p
+				| El protocolo universal de Automatización de Hogares/Servicios IFTTT ofrece una variada y
+				| constantemente creciente selección de posibles tareas a realizar automáticamente.
+				| Existen cientos de posibles combinaciones, debajo les ofrecemos algunas interesantes:
+
+			p
+				| (Recuerde que cualquiera de las siguientes puede realizarse manualmente de manera local o
+				| remota desde donde quiera)
+
+				ul
+					li
+						| Encender luces al llegar a casa (vía GPS)
+					li
+						| Abrir portón eléctrico al llegar a casa (vía GPS)
+					li
+						| Encender Luces, TV y Cable al Llegar a casa (Esto es un posible escenario configurable)
+					li
+						| Encender A/C si la temperatura baja/sube a cierta temperatura en una hora estipulada
+					li
+						| Encender A/C al detector movimiento en una habitación
+					li
+						| Encender A/C en modo DRY cuando se detecta Humedad mayor al 80% (requiere del Sensor de Ambiente A1)
+					li
+						| Encender cafetera y tostadora por la mañana a cierta hora o al detectar movimiento (requiere del Kit Alarma S1)
+					li
+						| Encender/Apagar Calefón a horas estipuladas
+					li
+						| Encender TV a la hora de un Programa favorito
+					li
+						| Apagar TV y/o luces si se detecta Ruido y/o Luz  pasadas las 2 AM (requiere del Sensor de Ambiente A1)
+					li
+						| Encender calienta camas si la temperatura es menor a 12° a una hora estipulada
+					li
+						| Etc
+
+				p
+					| Recuerde que las anteriores son ejemplos a utilizar, los mismos pueden ser adaptados para cumplir con sus necesidades especificas.
