@@ -2,10 +2,10 @@
 $(document).ready(function() {
     $('#characterLeft').text('140 characters left');
     $('#message').keydown(function () {
-        var max = 140;
+        var max = 300;
         var len = $(this).val().length;
         if (len >= max) {
-            $('#characterLeft').text('You have reached the limit');
+            $('#characterLeft').text('Has llegado al limite de caracteres');
             $('#characterLeft').addClass('red');
             $('#btnSubmit').addClass('disabled');
         }
@@ -29,7 +29,7 @@ $(document).ready(function() {
 			method: 'POST',
 			data: data
 		}).done(function(html) {
-		  $("#success-message").show();
+		  $("#success-message").removeClass("hidden");
 		});
 	});
 });
