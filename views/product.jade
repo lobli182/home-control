@@ -1,0 +1,59 @@
+extends layouts/starter
+
+append body-content
+	.image-uses
+		img(src=headerImg, alt=title)
+
+	.container
+		h1 #{title}
+
+		ul.nav.nav-tabs.product-nav
+			li.item-nav.active(role='presentation', value="product-general")
+				a(href="javascript:void(0);") General
+			li.item-nav(role='presentation', value="product-technical-data")
+				a(href="javascript:void(0);") Datos Tecnicos
+
+		.product-general
+
+			for image in images
+				img(src=image.src, alt=image.alt)
+
+		.product-technical-data.hidden
+			h3 Datos Técnicos
+
+			.col-md-2.vertical-header
+				label Especificaciones
+			.col-md-10.values
+				.col-md-3.header
+					for e in datosTecnicos.esp.headers1
+						p #{e}
+				.col-md-2.values
+					for v in datosTecnicos.esp.values1
+						p #{v}
+				.col-md-3.header
+					for e in datosTecnicos.esp.headers2
+						p #{e}
+				.col-md-2.value
+					for v in datosTecnicos.esp.values2
+						p #{v}
+
+			.col-md-2.vertical-header
+				label Dimensiones
+			.col-md-10.values
+				p #{datosTecnicos.dimensions}
+
+			.col-md-2.vertical-header
+				label Materiales
+			.col-md-10.values
+				p #{datosTecnicos.materials}
+
+			.col-md-2.vertical-header
+				label Características
+			.col-md-10.values
+				ul
+					for car in datosTecnicos.characteristics
+						li
+							p #{car}
+
+append scripts
+	script(src="../../js/product.js")

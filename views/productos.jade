@@ -27,6 +27,5 @@ append body-content
 						span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
 						span.sr-only Next
 
-
-				label.product-name #{product.name}
+				a.product-name(href=product.href) #{product.name}
 				p.product-description #{product.description}

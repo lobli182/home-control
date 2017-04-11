@@ -54,10 +54,22 @@ hr.navbar-divider {
 
 .product-element {
 	margin-top: 20px;
+	text-align: center;
 }
 
-.carousel.products a{
+.carousel.products a {
 	background: inherit;
+}
+
+.product-general img {
+	width: 100%;
+	padding-bottom: 20px;
+	border-radius: 8px;
+}
+
+.vertical-header {
+	margin-top: 30px;
+	font-weight: 800;
 }
 
 @media (max-width: 991px) {
