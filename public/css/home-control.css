@@ -4,6 +4,11 @@ body {
   /*background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, rgba(217, 217, 217, 0.2) 75%, rgba(188, 188, 188, 0) 100%);*/
 }
 
+#logo {
+	padding-top: 6px;
+	cursor: pointer;
+}
+
 .hidden {
 	display: none;
 }
