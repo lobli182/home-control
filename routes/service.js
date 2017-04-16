@@ -1,15 +1,16 @@
 var express = require('express');
 var router = express.Router();
-var nodemailer = require('nodemailer');
+var nodemailer=require("nodemailer");
+var smtpTransport = require('nodemailer-smtp-transport');
 
-var transporter = nodemailer.createTransport({
-	service: "gmail",
-	host: "smtp.gmail.com",
-	auth: {
-		user: '', // Your email id
-		pass: '' // Your password
-	}
-});
+var transporter = nodemailer.createTransport(smtpTransport({
+        service: "gmail",
+        host: "smtp.gmail.com",
+        auth: {
+                user: "", // Your email id
+                pass: ""
+        }
+}));
 
 router.post('/sendMsg', function (req, res) {
 	console.log(req);

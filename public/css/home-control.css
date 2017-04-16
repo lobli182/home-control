@@ -68,8 +68,25 @@ hr.navbar-divider {
 
 .product-general img {
 	width: 100%;
-	padding-bottom: 20px;
+	margin-bottom: 20px;
 	border-radius: 8px;
+}
+
+.product-technical-data .header p {
+	height: 50px;
+}
+
+.product-technical-data .values p {
+	height: 50px;
+}
+
+.mercado-libre-btn button {
+	float: right;
+    margin: 20px;
+}
+
+.mercado-libre-btn.rm-mini-3 button {
+	top: 900px;
 }
 
 .vertical-header {
@@ -77,23 +94,63 @@ hr.navbar-divider {
 	font-weight: 800;
 }
 
+.navbar-inverse .navbar-nav>li>a {
+    color: #084880;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: #0a63b0;
+}
+
+.product-image-sub {
+	height: 380px;
+}
+
 @media (max-width: 991px) {
+
+	.navbar-inverse {
+		background-color: white;
+		border: none;
+	}
+
+	.navbar-custom .navbar-header .navbar-toggle {
+		background-color: #084880;
+		color: #fff;
+		border: none;
+	}
+
+	.navbar-custom .navbar-header .navbar-toggle:hover, .navbar-custom .navbar-header .navbar-toggle:focus {
+		background-color: #0a63b0;
+	}
+
+	.navbar-inverse .navbar-nav>li>a {
+	    color: #084880;
+	}
+
+	.navbar-inverse .navbar-nav>li>a:hover {
+	    color: #0a63b0;
+	}
+
     .navbar-header {
         float: none;
     }
+
     .navbar-toggle {
         display: block;
     }
+
     .navbar-collapse {
         border-top: 1px solid transparent;
         box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
     }
+
     .navbar-collapse.collapse {
         display: none!important;
     }
     .navbar-nav {
         float: none!important;
         margin: 7.5px -15px;
+
     }
     .navbar-nav>li {
         float: none;
@@ -109,8 +166,21 @@ hr.navbar-divider {
     /* since 3.1.0 */
     .navbar-collapse.collapse.in {
         display: block!important;
+		border-color: #eee;
     }
     .collapsing {
         overflow: hidden!important;
+		border-color: #eee;
     }
+
+	.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+	    margin-left: -8px;
+		border-color: #eee;
+	}
+
+	.mercado-libre-btn button {
+		font-size: 10px;
+	    padding: 12px;
+	}
+
 }
