@@ -4,8 +4,9 @@ append body-content
 	.image-uses
 		img(src=headerImg, alt=title)
 
-	.mercado-libre-btn(class=id)
-		button.btn.btn-primary(type="button") Comprar
+	if href
+		.mercado-libre-btn(class=id)
+			button.btn.btn-primary(type="button") Comprar
 
 	.container
 		h1 #{title}

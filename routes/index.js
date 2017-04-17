@@ -85,6 +85,7 @@ var products = [
 var rmMini_3 = {
 	title: "Rm Mini 3",
 	id: "rm-mini-3",
+	href:"",
 	headerImg: "images/rmMini3/1.jpg",
 	images: [
 		{
@@ -133,6 +134,7 @@ var rmMini_3 = {
 var rmPro = {
 	title: "Rm Pro",
 	id:"rm-pro",
+	href:"",
 	headerImg: "images/rmPro/1.jpg",
 	images: [
 		{
@@ -235,6 +237,7 @@ var rmPro = {
 var a1 = {
 	title: "Sensor de Ambiente A1",
 	id: "a1",
+	href:"",
 	headerImg: "images/a1/1.jpg",
 	images: [
 		{
@@ -293,13 +296,7 @@ var smartSwitches= {
 	title: "Enchufes Smart",
 	headerImg:"images/switches/1.jpg",
 	products: [
-		{
-			id: "sp2",
-			name: "SP 2",
-			description: "Tipo C (En Linea)",
-			image1: "images/productos/Smart_Switch_1.jpg",
-			href: "/sp2"
-		},
+
 		{
 			id: "sp3",
 			name: "SP 3",
@@ -313,13 +310,144 @@ var smartSwitches= {
 			description: "Tipo I (Cruzados)",
 			image1: "images/productos/Smart_Switch_2.jpg",
 			href: "/spmini"
+		},
+		{
+			id: "sp2",
+			name: "SP 2",
+			description: "Tipo C (En Linea)",
+			image1: "images/productos/Smart_Switch_1.jpg",
+			href: "/sp2"
 		}
 	]
 };
 
-var sp2 = {};
-var sp3 = {};
-var spmini = {};
+var sp2 = {
+	title: "SP2",
+	id: "sp2",
+	href:"",
+	headerImg: "images/sp2/1.jpg",
+	images: [
+		{
+			src: "images/sp2/2.jpg",
+			alt: "",
+			text: ""
+		}
+	],
+	datosTecnicos: {
+		esp: {
+			headers1: ["Voltaje de Entrada:","Temp de funcionamiento:","Frecuencia WiFi:"],
+			values1: ["230v AC, 50/60hz","0~50℃", "2.4 GHz 802.11b/g/n"],
+			headers2: ["Corriente/Potencia Max:","Humedad de funcionamiento:","Consumo en Standby:"],
+			values2: ["10A / 2200W","≤80%RH","≤1.1W"]
+		},
+		dimensions: "100mm (alto) × 56mm (ancho) × 48mm (profundidad) sin contar enchufe, 80mm (profundidad) total",
+		materials: "ABS Clase V0 PC",
+		characteristics:[
+			"Luz Nocturna/Veladora programable",
+			"Enciende o apaga cualquier artefacto eléctrico remotamente (Ej. Cafetera, deshumidificador, secarropas, calefón, horno, caloventiladores, equipos de riego, etc)",
+			"Compatible con iOS/Android/Windows Phone (Utilizando Apk de Android)",
+			"Acceso a través de WiFi/3G/4G sin ninguna configuración complicada en su Router",
+			"Timers programables (26 grupos)",
+			"Timer Aleatorio",
+			"Cuenta Regresiva",
+			"Interacción Tipo IFTTT (If This, Then That) con sensor Broadlink A1 y/o Kit de Alarma S1",
+			"Historial de Eventos",
+			"Estado ON/OFF",
+			"Protección contra Sobrecargas",
+			"Operación Manual, por Temporizadores y/o Ubicación (GPS)",
+			"Activación con voz si se utiliza con App Intermedia RM Tasker"
+		]
+	}
+};
+
+var sp3 = {
+	title: "SP 3",
+	id: "sp3",
+	href:"",
+	headerImg: "images/sp3/1.jpg",
+	images: [
+		{
+			src: "images/sp3/2.jpg",
+			alt: "",
+			text: ""
+		},
+		{
+			src: "images/sp3/3.jpg",
+			alt: "",
+			text: ""
+		}
+	],
+	datosTecnicos: {
+		esp: {
+			headers1: ["Voltaje de Entrada:","Temp de funcionamiento:","Frecuencia WiFi:"],
+			values1: ["230v AC, 50/60hz","0~50℃", "2.4 GHz 802.11b/g/n"],
+			headers2: ["Corriente/Potencia Max:","Humedad de funcionamiento:","Consumo en Standby:"],
+			values2: ["16A / 3600W","≤80%RH","≤1.1W"]
+		},
+		dimensions: "94mm (alto) × 50mm (ancho) × 45mm (profundidad) sin contar enchufe, 81,6mm (profundidad) total",
+		materials: "ABS Clase V0 PC",
+		characteristics:[
+			"Luz Nocturna/Veladora programable",
+			"Enciende o apaga cualquier artefacto eléctrico remotamente (Ej. Cafetera, deshumidificador, secarropas, calefón, horno, caloventiladores, equipos de riego, etc)",
+			"Compatible con iOS/Android/Windows Phone (Utilizando Apk de Android)",
+			"Acceso a través de WiFi/3G/4G sin ninguna configuración complicada en su Router",
+			"Timers programables (26 grupos)",
+			"Timer Aleatorio",
+			"Cuenta Regresiva",
+			"Interacción Tipo IFTTT (If This, Then That) con sensor Broadlink A1 y/o Kit de Alarma S1",
+			"Historial de Eventos",
+			"Estado ON/OFF",
+			"Protección contra Sobrecargas",
+			"Operación Manual, por Temporizadores y/o Ubicación (GPS)",
+			"Activación con voz si se utiliza con App Intermedia RM Tasker"
+		]
+	}
+};
+
+var spmini = {
+	title: "SP Mini 3",
+	id: "spmini",
+	href:"",
+	headerImg: "images/spmini/1.jpg",
+	images: [
+		{
+			src: "images/spmini/2.jpg",
+			alt: "",
+			text: ""
+		},
+		{
+			src: "images/spmini/3.jpg",
+			alt: "",
+			text: ""
+		}
+	],
+	datosTecnicos: {
+		esp: {
+			headers1: ["Voltaje de Entrada:","Temp de funcionamiento:","Frecuencia WiFi:"],
+			values1: ["100-240v AC, 50/60hz","0~50℃", "2.4 GHz 802.11b/g/n"],
+			headers2: ["Corriente/Potencia Max:","Humedad de funcionamiento:","Consumo en Standby:"],
+			values2: ["10A / 2200W","≤85%RH","≤1.1W"]
+		},
+		dimensions: "66mm (alto) × 43mm (ancho) × 33mm (profundidad) sin contar enchufe, 55mm (profundidad) total",
+		materials: "ABS Clase V0 PC",
+		characteristics:[
+			"Compacto",
+			"Enciende o apaga cualquier artefacto eléctrico remotamente (Ej. Cafetera, deshumidificador, secarropas, calefón, horno, caloventiladores, equipos de riego, etc)",
+			"Compatible con iOS/Android/Windows Phone (Utilizando Apk de Android)",
+			"Acceso a través de WiFi/3G/4G sin ninguna configuración complicada en su Router",
+			"Timers programables (26 grupos)",
+			"Timer Aleatorio",
+			"Cuenta Regresiva",
+			"Interacción Tipo IFTTT (If This, Then That) con sensor Broadlink A1 y/o Kit de Alarma S1",
+			"Historial de Eventos",
+			"Estado ON/OFF",
+			"Protección contra Sobrecargas",
+			"Operación Manual, por Temporizadores y/o Ubicación (GPS)",
+			"Activación con voz si se utiliza con App Intermedia RM Tasker"
+		]
+	}
+};
+
 
 router.get('/health', function(req, res, next) {
   res.send({ health: "active" });

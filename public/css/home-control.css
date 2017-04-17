@@ -106,6 +106,10 @@ hr.navbar-divider {
 	height: 380px;
 }
 
+.products .carousel-img {
+	padding: 40px;
+}
+
 @media (max-width: 991px) {
 
 	.navbar-inverse {
