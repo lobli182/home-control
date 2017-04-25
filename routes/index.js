@@ -44,7 +44,8 @@ var products = [
 		description: "Domótica (automatización por sensores)",
 		image1: "images/productos/S1_1.jpg",
 		image2: "images/productos/S1_2.jpg",
-		image3: "images/productos/S1_3.jpg"
+		image3: "images/productos/S1_3.jpg",
+		href: "/alarmkit"
 
 	},
 	{
@@ -62,7 +63,8 @@ var products = [
 		description: "(E27, Control Remoto RF) Simples / Kit de 4",
 		image1: "images/productos/Lamp_Holder_1.jpg",
 		image2: "images/productos/Lamp_Holder_2.jpg",
-		image3: "images/productos/Lamp_Holder_3.jpg"
+		image3: "images/productos/Lamp_Holder_3.jpg",
+		href: "/lampholders"
 	},
 	{
 		id: "tactil-switch",
@@ -78,7 +80,8 @@ var products = [
 		description: "(Sensores, Controles Remotos RF)",
 		image1: "images/productos/Accesorios.jpg",
 		image2: "",
-		image3: ""
+		image3: "",
+		href:"/accesories"
 	}
 ];
 
@@ -448,9 +451,423 @@ var spmini = {
 	}
 };
 
+var alarmKit = {
+	title: "Kit Alarma S1 WiFi",
+	id: "alarm-kit",
+	href:"",
+	headerImg: "images/alarmKit/1.jpg",
+	images: [
+		{
+			src: "images/alarmKit/2.jpg",
+			alt: "",
+			text: ""
+		},
+		{
+			src: "images/alarmKit/3.jpg",
+			alt: "",
+			text: ""
+		},
+		{
+			src: "images/alarmKit/4.jpg",
+			alt: "",
+			text: ""
+		},
+		{
+			src: "images/alarmKit/5.jpg",
+			alt: "",
+			text: ""
+		},
+		{
+			src: "images/alarmKit/6.jpg",
+			alt: "",
+			text: ""
+		},
+		{
+			src: "images/alarmKit/7.jpg",
+			alt: "",
+			text: ""
+		},
+		{
+			src: "images/alarmKit/8.jpg",
+			alt: "",
+			text: ""
+		},
+		{
+			src: "images/alarmKit/9.jpg",
+			alt: "",
+			text: ""
+		}
+	],
+	datosTecnicos: {
+		esp: {
+			headers1: ["Voltaje de Entrada:","Temp de funcionamiento:","Frecuencia WiFi:","Radio Frecuencia:","Frecuencia RF:"],
+			values1: ["100-240v AC, 50/60hz","0~50℃", "2.4 GHz 802.11b/g/n","433.92MHz","-110dB"],
+			headers2: ["Capacidad Sensores:","Humedad de funcionamiento:","Consumo en Standby:","Protocolo RF:"],
+			values2: ["Hasta 16","≤85%RH","≤1.1W","Protocolo RF Broadlink"]
+		},
+		dimensions: "58mm (alto) × 44mm (ancho) × 75mm (profundidad) sin contar enchufe, 55mm (profundidad) total",
+		materials: "ABS Clase V0 Resistente al Fuego, Tapa Acrílica",
+		characteristics:[
+			"Compacto",
+			"Compatible con iOS/Android/Windows Phone (Utilizando Apk de Android)",
+			"Acceso a través de WiFi/3G/4G sin ninguna configuración complicada en su Router",
+			"Incluye 1 Sensor de Puerta/Ventana y 1 Sensor de Movimiento.",
+			"Expandible hasta 16 sensores",
+			"Control Remoto con Opciones de Armado Completo, Armado Parcial (por zonas), Desarmado y Emergencia SOS",
+			"Cientos de usos con Interacción Tipo IFTTT (If This, Then That) utilizando Broadlink RM, RM Mini y Enchufes SP a través del movimiento o apertura de puertas o ventanas.",
+			"Notificaciones a Smartphone configurables en Tiempo Real",
+			"Historial de Eventos",
+			"Activación con voz si se utiliza con App Intermedia RM Tasker"
+		]
+	}
+};
+
+var lampHolders= {
+	title: "Adaptadores para lamparas",
+	headerImg:"images/lampHolders/1.png",
+	products: [
+
+		{
+			id: "lh01",
+			name: "LH01",
+			description: "",
+			image1: "images/productos/Lamp_Holder_1.jpg",
+			href: "/lh01"
+		},
+		{
+			id: "lh04",
+			name: "LH04",
+			description: "Tipo I (Cruzados)",
+			image1: "images/lampHolders/LH04/2.jpg",
+			href: "/lh04"
+		}
+	]
+};
+
+var lh01 = {
+	title: "LH01",
+	id: "lh01",
+	href:"",
+	headerImg: "images/lampHolders/LH01/1.png",
+	images: [
+		{
+			src: "images/lampHolders/LH01/2.jpg",
+			alt: "",
+			text: ""
+		},
+		{
+			src: "images/lampHolders/LH01/3.jpg",
+			alt: "",
+			text: ""
+		},
+		{
+			src: "images/lampHolders/LH01/4.jpg",
+			alt: "",
+			text: ""
+		},
+		{
+			src: "images/lampHolders/LH01/5.jpg",
+			alt: "",
+			text: ""
+		}
+	],
+	datosTecnicos: {
+		esp: {
+			headers1: ["Voltaje de Entrada:","Tipo de Pase:","Radio Frecuencia:", "Distancia de Operación:"],
+			values1: ["220v AC, 50/60hz","E27", "315MHz","20m"],
+			headers2: ["Pot Max Incandescentes:","Pot Max Bajo Con/LED:","Consumo en Standby:","Certificación"],
+			values2: ["1000W","300W","≤0.015W","CE, CCC, ROHS"]
+		},
+		dimensions: "1105mm (alto) × 70mm (ancho), Control Remoto 95mm (alto) x 38mm (ancho)",
+		materials: "Hierro, Latón, ABS",
+		characteristics:[
+			"Compacto",
+			"Pase E27",
+			"Fácil instalación",
+			"Apta para luces de techo y Lámparas Portátiles",
+			"Compatible con todo tipo de Lámparas Incandescentes, Bajo Consumo, LED, etc",
+			"Control Remoto Programable con pila incluída",
+			"Posibilidad de ser comandado fuera de su hogar mediante el Control Universal Broadlink RM Pro",
+			"Posibilidad de ser encendido automáticamente si se detecta oscuridad a una hora programada utilizando el Sensor de Ambiente Broadlink A1",
+			"Posibilidad de ser encendido automáticamente si se detecta movimiento, o apertura de puerta o ventana utilizando el Kit de Alarma Broadlink S1",
+			"Activación con voz si se utiliza con Broadlink RM Pro y App Intermedia RM Tasker"
+		]
+	}
+};
+
+var lh04 = {
+	title: "LH04",
+	id: "lh04",
+	href:"",
+	headerImg: "images/lampHolders/LH04/1.png",
+	images: [
+		{
+			src: "images/lampHolders/LH04/2.jpg",
+			alt: "",
+			text: ""
+		},
+		{
+			src: "images/lampHolders/LH04/3.jpg",
+			alt: "",
+			text: ""
+		},
+		{
+			src: "images/lampHolders/LH04/4.jpg",
+			alt: "",
+			text: ""
+		},
+		{
+			src: "images/lampHolders/LH04/5.jpg",
+			alt: "",
+			text: ""
+		}
+	],
+	datosTecnicos: {
+		esp: {
+			headers1: ["Voltaje de Entrada:","Tipo de Pase:","Radio Frecuencia:", "Distancia de Operación:"],
+			values1: ["220v AC, 50/60hz","E27", "315MHz","20m"],
+			headers2: ["Pot Max Incandescentes:","Pot Max Bajo Con/LED:","Consumo en Standby:","Certificación"],
+			values2: ["1000W","300W","≤0.015W","CE, CCC, ROHS"]
+		},
+		dimensions: "1105mm (alto) × 70mm (ancho), Control Remoto 95mm (alto) x 38mm (ancho)",
+		materials: "Hierro, Latón, ABS",
+		characteristics:[
+			"Kit de 4 Unidades",
+			"Compacto",
+			"Pase E27",
+			"Fácil instalación",
+			"Apta para luces de techo y Lámparas Portátiles",
+			"Compatible con todo tipo de Lámparas Incandescentes, Bajo Consumo, LED, etc",
+			"Control Remoto Programable con pila incluída",
+			"Posibilidad de ser comandado fuera de su hogar mediante el Control Universal Broadlink RM Pro",
+			"Posibilidad de ser encendido automáticamente si se detecta oscuridad a una hora programada utilizando el Sensor de Ambiente Broadlink A1",
+			"Posibilidad de ser encendido automáticamente si se detecta movimiento, o apertura de puerta o ventana utilizando el Kit de Alarma Broadlink S1",
+			"Activación con voz si se utiliza con Broadlink RM Pro y App Intermedia RM Tasker"
+		]
+	}
+};
+
+var accesories= {
+	title: "Adaptadores para lamparas",
+	headerImg:"images/accesories/header.png",
+	products: [
+		{
+			id: "doorsensor",
+			name: "Door Sensor S1",
+			description: "",
+			image1: "images/accesories/DoorSensorS1/1.jpg",
+			href: "/doorsensor"
+		},
+		{
+			id: "hometouch1",
+			name: "Home Touch 1",
+			description: "",
+			image1: "images/accesories/HomeTouch1/1.jpg",
+			href: "/hometouch1"
+		},
+		{
+			id: "hometouch2",
+			name: "Home Touch 2",
+			description: "",
+			image1: "images/accesories/HomeTouch2/1.jpg",
+			href: "/hometouch2"
+		},
+		{
+			id: "motionSensor",
+			name: "Motion Sensor S1",
+			description: "",
+			image1: "images/accesories/motionSensorS1/1.jpg",
+			href: "/motionsensor"
+		},
+		{
+			id: "remotes1",
+			name: "Remote S1",
+			description: "",
+			image1: "images/accesories/RemoteS1/1.jpg",
+			href: "/remote1"
+		}
+	]
+};
+
+var doorsensor = {
+	title: "Door Sensor",
+	id: "doorsensor",
+	href:"",
+	headerImg: "images/accesories/header.png",
+	images: [
+		{
+			src: "images/accesories/DoorSensorS1/1.jpg",
+			alt: "",
+			text: ""
+		}
+	],
+	datosTecnicos: {
+		esp: {
+			headers1: ["Voltaje de Entrada:","Autonomía:","Temp de funcionamiento:", "Frecuencia RF:"],
+			values1: ["3V DC (2 pilas AAA)","2 a 3 años c/Alcalinas", "-10~50℃","433mhz/315mhz"],
+			headers2: ["Pot Max Incandescentes:","Pot Max Bajo Con/LED:","Consumo en Standby:","Certificación"],
+			values2: ["1000W","300W","≤0.015W","CE, CCC, ROHS"]
+		},
+		dimensions: "Sensor 76mm (alto) × 36mm (ancho) × 18mm (profundidad), Imán  76mm (alto) × 12.5mm (ancho) × 18mm (profundidad)",
+		materials: "ABS Clase V0 Resistente al Fuego",
+		characteristics:[
+			"Compacto",
+			"Fácil configuración con Kit Alarma Broadlink S1, se agrega mediante Código QR",
+			"Dispara Alerta instantánea a Modulo Madre de Kit S1 en caso de Apertura de Puertas o Ventanas ",
+			"LED indicador de funcionamiento",
+			"Estado de batería",
+			"Alerta de obstrucción/desarme del sensor si la alarma esta activada",
+			"Gran autonomía de 2 a 3 años con Pilas Alcalinas de buena calidad",
+			"Incluye Cinta doble Faz 3M para fácil instalación",
+			"Incluye Tornillos y Tacos Fischer 6mm para instalación profesional ",
+			"Pilas No Incluidas"
+		]
+	}
+};
+
+var hometouch1 = {
+	title: "Home Touch 1",
+	id: "hometouch1",
+	href:"",
+	headerImg: "images/accesories/header.png",
+	images: [
+		{
+			src: "images/accesories/HomeTouch1/1.jpg",
+			alt: "",
+			text: ""
+		}
+	],
+	datosTecnicos: {
+		esp: {
+			headers1: ["Voltaje de Entrada:","Temp de funcionamiento:"],
+			values1: ["12V DC (1 pila 27A)", "0~50℃"],
+			headers2: ["Frecuencia RF:","Distancia de Operación"],
+			values2: ["433mhz","30m máx."]
+		},
+		dimensions: "40mm (alto) × 25mm (ancho) × 15mm (profundidad)",
+		materials: "ABS, Metal",
+		characteristics:[
+			"Compacto",
+			"Maneja 3 Luces",
+			"Botón de \“Apagar Todas\”",
+			"LED indicador de funcionamiento",
+			"Tapa de Seguridad para Niños",
+			"Enganche para llaves",
+			"Pila Incluida"
+		]
+	}
+};
+
+var hometouch2 = {
+	title: "Home Touch 2",
+	id: "hometouch2",
+	href:"",
+	headerImg: "images/accesories/header.png",
+	images: [
+		{
+			src: "images/accesories/HomeTouch2/1.jpg",
+			alt: "",
+			text: ""
+		}
+	],
+	datosTecnicos: {
+		esp: {
+			headers1: ["Voltaje de Entrada:","Temp de funcionamiento:"],
+			values1: ["12V DC (1 pila 27A)", "0~50℃"],
+			headers2: ["Frecuencia RF:","Distancia de Operación"],
+			values2: ["433mhz","30m máx."]
+		},
+		dimensions: "120mm (alto) × 50mm (ancho) × 15mm (profundidad)",
+		materials: "ABS, Cristal",
+		characteristics:[
+			"Compacto",
+			"Compatible con Interruptores HomeTouch",
+			"Botones Táctiles ",
+			"Indicador de Luces Encendidas",
+			"Maneja 5 Luces",
+			"Botón de \“Apagar Todas\”",
+			"Función Dimmer para Interruptores HomeTouch compatibles",
+			"Modo hibernación luego de 20m de inactividad",
+			"Escenas (un botón activa una o más luces)",
+			"Pilas Incluidas"
+		]
+	}
+};
+
+var motionsensor = {
+	title: "Motion Sensor",
+	id: "motionsendor",
+	href:"",
+	headerImg: "images/accesories/header.png",
+	images: [
+		{
+			src: "images/accesories/MotionSensorS1/1.jpg",
+			alt: "",
+			text: ""
+		}
+	],
+	datosTecnicos: {
+		esp: {
+			headers1: ["Voltaje de Entrada:","Autonomía:","Temp de funcionamiento:", "Frecuencia RF:","Altura de Instalación:"],
+			values1: ["3V DC (2 pilas AA)","2 años c/Alcalinas", "-20~50℃","433mhz/315mhz","2.2m a 2.7m"],
+			headers2: ["Distancia de operación:","Área de Detección:","Consumo en Standby:","Consumo en funcionamiento:"],
+			values2: ["30m max","12m y 90°","≤15uA","≤15mA"]
+		},
+		dimensions: "108mm (alto) × 62mm (ancho) × 43mm (profundidad)",
+		materials: "ABS Clase V0 Resistente al Fuego",
+		characteristics:[
+			"Compacto",
+			"Fácil configuración con Kit Broadlink S1, se agrega mediante Código QR",
+			"Dispara Alerta instantánea a Modulo Madre de Kit S1 en caso de detectar Movimiento ",
+			"Sistema de Anti Falsas Alarmas",
+			"LED indicador de funcionamiento",
+			"Estado de batería",
+			"Alerta de obstrucción/desarme del sensor si la alarma esta activada",
+			"Gran autonomía de 2 años con Pilas Alcalinas de buena calidad",
+			"Incluye Tornillos, Tacos Fischer 6mm y soporte articulado para instalación profesional",
+			"Pilas No Incluidas"
+		]
+	}
+};
+
+var remote1 = {
+	title: "Remote S1",
+	id: "remote1",
+	href:"",
+	headerImg: "images/accesories/header.png",
+	images: [
+		{
+			src: "images/accesories/RemoteS1/1.jpg",
+			alt: "",
+			text: ""
+		}
+	],
+	datosTecnicos: {
+		esp: {
+			headers1: ["Voltaje de Entrada:","Temp de funcionamiento:", "Frecuencia RF:"],
+			values1: ["3V DC (1 CR2032)","0~50℃", "433mhz/315mhz"],
+			headers2: ["Distancia de operación:","Consumo en Standby:","Consumo en funcionamiento:"],
+			values2: ["30m max","≤1uA","≤15mA"]
+		},
+		dimensions: "57mm (alto) × 30mm (ancho) × 8.5mm (profundidad)",
+		materials: "ABS Clase V0 Resistente al Fuego",
+		characteristics:[
+			"Compacto",
+			"Fácil configuración con Kit Broadlink S1, se agrega mediante Código QR",
+			"Funciones de Armado, Armado por Zonas (configurable), Desarmado, Emergencia SOS",
+			"LED indicador de funcionamiento",
+			"Enganche para llaves",
+			"Pila No Incluida"
+		]
+	}
+};
 
 router.get('/health', function(req, res, next) {
   res.send({ health: "active" });
+});
+
+router.get('/buy', function(req, res, next) {
+  res.render('buy', product);
 });
 
 router.get('/productos', function(req, res, next) {
@@ -485,8 +902,48 @@ router.get('/smartSwitches', function(req, res, next) {
   res.render('subproducts', smartSwitches);
 });
 
+router.get('/alarmkit', function(req, res, next) {
+  res.render('product', alarmKit);
+});
+
 router.get('/usos', function(req, res, next) {
   res.render('usos', { usos: "active" });
+});
+
+router.get('/lampholders', function(req, res, next) {
+  res.render('subproducts', lampHolders);
+});
+
+router.get('/lh01', function(req, res, next) {
+  res.render('product', lh01);
+});
+
+router.get('/lh04', function(req, res, next) {
+  res.render('product', lh04);
+});
+
+router.get('/accesories', function(req, res, next) {
+  res.render('subproducts', accesories);
+});
+
+router.get('/doorsensor', function(req, res, next) {
+  res.render('product', doorsensor);
+});
+
+router.get('/hometouch1', function(req, res, next) {
+  res.render('product', hometouch1);
+});
+
+router.get('/hometouch2', function(req, res, next) {
+  res.render('product', hometouch2);
+});
+
+router.get('/motionsensor', function(req, res, next) {
+  res.render('product', motionsensor);
+});
+
+router.get('/remote1', function(req, res, next) {
+  res.render('product', remote1);
 });
 
 router.get('/soporte', function(req, res, next) {

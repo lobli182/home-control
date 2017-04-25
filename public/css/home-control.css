@@ -9,6 +9,14 @@ body {
 	cursor: pointer;
 }
 
+.footer-custom ul li {
+	padding-left: 20px;
+}
+
+.footer-custom .mercado-libre-icon {
+	cursor: pointer;
+}
+
 .hidden {
 	display: none;
 }
@@ -43,6 +51,7 @@ hr.navbar-divider {
 
 .products-images {
 	height: 315px;
+	width: 100%;
 }
 
 .product-name {

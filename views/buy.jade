@@ -10,9 +10,9 @@ append body-content
 
 
 		for product in products
-			.col-md-4.product-element(class=product.id)
+			.col-md-4.product-element
 
-				img.products-images(src=product.image1, alt='First slide')
+				img.product-image-sub(src=product.image1, alt='First slide')
 
 				a.product-name(href=product.href) #{product.name}
 				p.product-description #{product.description}
