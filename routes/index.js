@@ -677,7 +677,7 @@ var accesories= {
 			id: "motionSensor",
 			name: "Sensor De Movimiento Inálambrico Para Alarma",
 			description: "",
-			image1: "images/accesories/motionSensorS1/1.jpg",
+			image1: "images/accesories/MotionSensorS1/1.jpg",
 			href: "/motionsensor"
 		},
 		{
