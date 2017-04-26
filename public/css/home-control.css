@@ -59,6 +59,7 @@ hr.navbar-divider {
 	width: 100%;
 	padding-top: 20px;
 	padding-bottom: 0;
+	font-weight: bold;
 }
 
 .product-description {
@@ -89,7 +90,7 @@ hr.navbar-divider {
 	height: 50px;
 }
 
-.mercado-libre-btn button {
+.mercado-libre-btn a {
 	float: right;
     margin: 20px;
 }
@@ -163,7 +164,7 @@ hr.navbar-divider {
     .navbar-nav {
         float: none!important;
         margin: 7.5px -15px;
-
+	    text-align: end;
     }
     .navbar-nav>li {
         float: none;

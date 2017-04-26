@@ -13,7 +13,7 @@ router.get('/nosotros', function(req, res, next) {
 var products = [
 	{
 		id: "rm-pro",
-		name: "RM PRO",
+		name: "Control Universal Wifi Broadlink Rm Pro4",
 		description: "(Control remoto universal WiFi) IR, RF, Temperatura",
 		image1: "images/productos/RM_Pro_1.jpg",
 		image2: "images/productos/RM_Pro_2.jpg",
@@ -22,7 +22,7 @@ var products = [
 	},
 	{
 		id: "rm-mini",
-		name: "RM Mini 3",
+		name: "Control Universal Wifi Broadlink Rm Mini3",
 		description: "(Control remoto universal WiFi) IR",
 		image1: "images/productos/RM_Mini_1.jpg",
 		image2: "images/productos/RM_Mini_2.jpg",
@@ -31,7 +31,7 @@ var products = [
 	},
 	{
 		id: "smart-switch",
-		name: "Enchufes Smart",
+		name: "Enchufes Inteligentes",
 		description: "Tipo C (En Linea), Tipo I (Cruzados), Tipo F (Schuko)",
 		image1: "images/productos/Smart_Switch_1.jpg",
 		image2: "images/productos/Smart_Switch_2.jpg",
@@ -40,7 +40,7 @@ var products = [
 	},
 	{
 		id: "alarm-kit",
-		name: "Kit Alarma S1 WiFi",
+		name: "Kit Alarma Smart Broadlink S1 Wifi",
 		description: "Domótica (automatización por sensores)",
 		image1: "images/productos/S1_1.jpg",
 		image2: "images/productos/S1_2.jpg",
@@ -50,7 +50,7 @@ var products = [
 	},
 	{
 		id: "sensor-env",
-		name: "Sensor de Ambiente A1",
+		name: "Sensor De Ambiente Ifttt Broadlink A1",
 		description: "(Temperatura, Humedad, Calidad de Aire, Luz, Ruido, Domótica)",
 		image1: "images/productos/A1_1.jpg",
 		image2: "images/productos/A1_2.jpg",
@@ -59,7 +59,7 @@ var products = [
 	},
 	{
 		id: "lamp-holder",
-		name: "Adaptadores para Lamparas",
+		name: "Adaptadores para Lámparas",
 		description: "(E27, Control Remoto RF) Simples / Kit de 4",
 		image1: "images/productos/Lamp_Holder_1.jpg",
 		image2: "images/productos/Lamp_Holder_2.jpg",
@@ -72,7 +72,8 @@ var products = [
 		description: "(Panel de vidrio, Control Remoto RF)",
 		image1: "images/productos/Interruptores_1.jpg",
 		image2: "images/productos/Interruptores_2.jpg",
-		image3: "images/productos/Interruptores_3.jpg"
+		image3: "images/productos/Interruptores_3.jpg",
+		href: "/tactilswitch"
 	},
 	{
 		id: "accesories",
@@ -86,9 +87,9 @@ var products = [
 ];
 
 var rmMini_3 = {
-	title: "Rm Mini 3",
+	title: "Control Universal Wifi Broadlink Rm Mini3",
 	id: "rm-mini-3",
-	href:"",
+	href:"http://articulo.mercadolibre.com.uy/MLU-445151557-control-universal-wifi-broadlink-rm-mini3-controla-tu-casa-_JM",
 	headerImg: "images/rmMini3/1.jpg",
 	images: [
 		{
@@ -135,9 +136,9 @@ var rmMini_3 = {
 };
 
 var rmPro = {
-	title: "Rm Pro",
+	title: "Control Universal Wifi Broadlink Rm Pro4",
 	id:"rm-pro",
-	href:"",
+	href:"http://articulo.mercadolibre.com.uy/MLU-445119162-control-universal-wifi-broadlink-rm-pro4-controla-tu-casa-_JM",
 	headerImg: "images/rmPro/1.jpg",
 	images: [
 		{
@@ -238,9 +239,9 @@ var rmPro = {
 };
 
 var a1 = {
-	title: "Sensor de Ambiente A1",
+	title: "Sensor De Ambiente Ifttt Broadlink A1",
 	id: "a1",
-	href:"",
+	href:"http://articulo.mercadolibre.com.uy/MLU-445572926-sensor-de-ambiente-ifttt-broadlink-a1-controla-tu-casa-_JM",
 	headerImg: "images/a1/1.jpg",
 	images: [
 		{
@@ -296,27 +297,27 @@ var a1 = {
 };
 
 var smartSwitches= {
-	title: "Enchufes Smart",
+	title: "Enchufes Inteligentes",
 	headerImg:"images/switches/1.jpg",
 	products: [
 
 		{
 			id: "sp3",
-			name: "SP 3",
+			name: "Enchufe/Timer Smart Wifi Broadlink Sp3",
 			description: "Tipo F (Schuko)",
 			image1: "images/productos/Smart_Switch_3.jpg",
 			href: "/sp3"
 		},
 		{
 			id: "sp-mini3",
-			name: "SP Mini 3",
+			name: "Enchufe/Timer Wifi Broadlink Sp Mini3",
 			description: "Tipo I (Cruzados)",
 			image1: "images/productos/Smart_Switch_2.jpg",
 			href: "/spmini"
 		},
 		{
 			id: "sp2",
-			name: "SP 2",
+			name: "Enchufe/Timer Smart Wifi Broadlink Sp2",
 			description: "Tipo C (En Linea)",
 			image1: "images/productos/Smart_Switch_1.jpg",
 			href: "/sp2"
@@ -325,9 +326,9 @@ var smartSwitches= {
 };
 
 var sp2 = {
-	title: "SP2",
+	title: "Enchufe / Timer Smart Wifi Broadlink Sp2",
 	id: "sp2",
-	href:"",
+	href:"http://articulo.mercadolibre.com.uy/MLU-445400857-enchufe-timer-smart-wifi-broadlink-sp2-controla-tu-casa-_JM",
 	headerImg: "images/sp2/1.jpg",
 	images: [
 		{
@@ -364,9 +365,9 @@ var sp2 = {
 };
 
 var sp3 = {
-	title: "SP 3",
+	title: "Enchufe / Timer Smart Wifi Broadlink Sp3",
 	id: "sp3",
-	href:"",
+	href:"http://articulo.mercadolibre.com.uy/MLU-445401845-enchufe-timer-smart-wifi-broadlink-sp3-controla-tu-casa-_JM",
 	headerImg: "images/sp3/1.jpg",
 	images: [
 		{
@@ -408,9 +409,9 @@ var sp3 = {
 };
 
 var spmini = {
-	title: "SP Mini 3",
+	title: "Enchufe / Timer Wifi Broadlink Sp Mini3",
 	id: "spmini",
-	href:"",
+	href: "http://articulo.mercadolibre.com.uy/MLU-445395044-enchufe-timer-wifi-broadlink-sp-mini3-controla-tu-casa-_JM",
 	headerImg: "images/spmini/1.jpg",
 	images: [
 		{
@@ -452,9 +453,9 @@ var spmini = {
 };
 
 var alarmKit = {
-	title: "Kit Alarma S1 WiFi",
+	title: "Kit Alarma Smart Broadlink S1 Wifi",
 	id: "alarm-kit",
-	href:"",
+	href:"http://articulo.mercadolibre.com.uy/MLU-445592451-kit-alarma-smart-broadlink-s1-wifi-a-cel-controla-tu-casa-_JM",
 	headerImg: "images/alarmKit/1.jpg",
 	images: [
 		{
@@ -523,21 +524,21 @@ var alarmKit = {
 };
 
 var lampHolders= {
-	title: "Adaptadores para lamparas",
+	title: "Adaptadores para lámparas",
 	headerImg:"images/lampHolders/1.png",
 	products: [
 
 		{
 			id: "lh01",
-			name: "LH01",
+			name: "Portalámparas Smart A Control Remoto Rf",
 			description: "",
 			image1: "images/productos/Lamp_Holder_1.jpg",
 			href: "/lh01"
 		},
 		{
 			id: "lh04",
-			name: "LH04",
-			description: "Tipo I (Cruzados)",
+			name: "Portalámparas Smart X4 Control Remoto Rf",
+			description: "",
 			image1: "images/lampHolders/LH04/2.jpg",
 			href: "/lh04"
 		}
@@ -545,9 +546,9 @@ var lampHolders= {
 };
 
 var lh01 = {
-	title: "LH01",
+	title: "Portalámparas Smart A Control Remoto Rf",
 	id: "lh01",
-	href:"",
+	href: "http://articulo.mercadolibre.com.uy/MLU-445740392-portalamparas-smart-a-control-remoto-rf-controla-tu-casa-_JM",
 	headerImg: "images/lampHolders/LH01/1.png",
 	images: [
 		{
@@ -596,9 +597,9 @@ var lh01 = {
 };
 
 var lh04 = {
-	title: "LH04",
+	title: "Portalámparas Smart X4 Control Remoto Rf",
 	id: "lh04",
-	href:"",
+	href: "http://articulo.mercadolibre.com.uy/MLU-445742458-portalamparas-smart-x4-control-remoto-rf-controla-tu-casa-_JM",
 	headerImg: "images/lampHolders/LH04/1.png",
 	images: [
 		{
@@ -653,35 +654,35 @@ var accesories= {
 	products: [
 		{
 			id: "doorsensor",
-			name: "Door Sensor S1",
+			name: "Sensor De Aberturas Inalámbrico Para Kit Alarma",
 			description: "",
 			image1: "images/accesories/DoorSensorS1/1.jpg",
 			href: "/doorsensor"
 		},
 		{
 			id: "hometouch1",
-			name: "Home Touch 1",
+			name: "Control Remoto Análogo para Interruptor",
 			description: "",
 			image1: "images/accesories/HomeTouch1/1.jpg",
 			href: "/hometouch1"
 		},
 		{
 			id: "hometouch2",
-			name: "Home Touch 2",
+			name: "Control Remoto Táctil para Interruptor",
 			description: "",
 			image1: "images/accesories/HomeTouch2/1.jpg",
 			href: "/hometouch2"
 		},
 		{
 			id: "motionSensor",
-			name: "Motion Sensor S1",
+			name: "Sensor De Movimiento Inálambrico Para Alarma",
 			description: "",
 			image1: "images/accesories/motionSensorS1/1.jpg",
 			href: "/motionsensor"
 		},
 		{
 			id: "remotes1",
-			name: "Remote S1",
+			name: "Control Remoto Adicional Rf Para Kit Alarma",
 			description: "",
 			image1: "images/accesories/RemoteS1/1.jpg",
 			href: "/remote1"
@@ -690,9 +691,9 @@ var accesories= {
 };
 
 var doorsensor = {
-	title: "Door Sensor",
+	title: "Sensor De Aberturas Inalámbrico Para Kit Alarma Broadlink S1",
 	id: "doorsensor",
-	href:"",
+	href: "http://articulo.mercadolibre.com.uy/MLU-445803687-sensor-de-aberturas-inalambrico-para-kit-alarma-broadlink-s1-_JM",
 	headerImg: "images/accesories/header.png",
 	images: [
 		{
@@ -726,9 +727,9 @@ var doorsensor = {
 };
 
 var hometouch1 = {
-	title: "Home Touch 1",
+	title: "Control Remoto Análogo para Interruptor",
 	id: "hometouch1",
-	href:"",
+	href: "",
 	headerImg: "images/accesories/header.png",
 	images: [
 		{
@@ -759,7 +760,7 @@ var hometouch1 = {
 };
 
 var hometouch2 = {
-	title: "Home Touch 2",
+	title: "Control Remoto táctil para interruptor",
 	id: "hometouch2",
 	href:"",
 	headerImg: "images/accesories/header.png",
@@ -795,9 +796,9 @@ var hometouch2 = {
 };
 
 var motionsensor = {
-	title: "Motion Sensor",
+	title: "Sensor De Movimiento Inálambrico Para Alarma Broadlink S1",
 	id: "motionsendor",
-	href:"",
+	href: "http://articulo.mercadolibre.com.uy/MLU-445803956-sensor-de-movimiento-inalambrico-para-alarma-broadlink-s1-_JM",
 	headerImg: "images/accesories/header.png",
 	images: [
 		{
@@ -831,9 +832,9 @@ var motionsensor = {
 };
 
 var remote1 = {
-	title: "Remote S1",
+	title: "Control Remoto Adicional Rf Para Kit Alarma Broadlink S1",
 	id: "remote1",
-	href:"",
+	href: "http://articulo.mercadolibre.com.uy/MLU-445803992-control-remoto-adicional-rf-para-kit-alarma-broadlink-s1-_JM",
 	headerImg: "images/accesories/header.png",
 	images: [
 		{
@@ -858,6 +859,90 @@ var remote1 = {
 			"LED indicador de funcionamiento",
 			"Enganche para llaves",
 			"Pila No Incluida"
+		]
+	}
+};
+
+var tactilSwitch = {
+	title: "Interruptores táctiles",
+	id:"tactil-switch",
+	href: "http://articulo.mercadolibre.com.uy/MLU-444453384-nueva-generacion-de-llaves-de-luz-interruptores-touch-_JM",
+	headerImg: "images/interruptores/3.jpg",
+	images: [
+		{
+			src: "images/interruptores/2.jpg",
+			alt: "",
+			text: ""
+		},
+		{
+			src: "images/interruptores/1.jpg",
+			alt: "",
+			text: ""
+		},
+		{
+			src: "images/interruptores/4.jpg",
+			alt: "",
+			text: ""
+		},
+		{
+			src: "images/interruptores/5.jpg",
+			alt: "",
+			text: ""
+		},
+		{
+			src: "images/interruptores/6.jpg",
+			alt: "",
+			text: ""
+		},
+		{
+			src: "images/interruptores/7.jpg",
+			alt: "",
+			text: ""
+		},
+		{
+			src: "images/interruptores/8.jpg",
+			alt: "",
+			text: ""
+		},
+		{
+			src: "images/interruptores/9.jpg",
+			alt: "",
+			text: ""
+		},
+		{
+			src: "images/interruptores/10.jpg",
+			alt: "",
+			text: ""
+		},
+		{
+			src: "images/interruptores/11.jpg",
+			alt: "",
+			text: ""
+		}
+	],
+	datosTecnicos: {
+		esp: {
+			headers1: ["Voltaje de Entrada:","Colores:","Radio Frecuencia:","Distancia de operación:"],
+			values1: ["110v-220v AC, 50/60hz","Blanco/Negro","433MHz", "30m"],
+			headers2: ["Temp de Funcionamiento:","Max Potencia Lámpara:","Consumo en Standby:","Certificación:"],
+			values2: ["-30~70℃","1000W","≤0.1mW","CE, ROHS"]
+		},
+		dimensions: "118mm (alto) × 72mm (ancho) Medida Standard",
+		materials: "Cristal, ABS",
+		characteristics:[
+			"Botón Touch Capacitivo",
+			"Cristal de Alta Calidad Anti Rayas",
+			"No se desgasta",
+			"Fácil limpieza",
+			"Fácil instalación",
+			"Disponibles en 1, 2, 3 o 4 Botones.",
+			"Indicador de estado Rojo=ON, Azul=OFF",
+			"Modelos con distintas funciones: Standard, Control Remoto, Escalera, Dimmer, Dimmer+Control, ",
+			"Compatible con todo tipo de Lámparas Incandescentes, Bajo Consumo, LED, etc",
+			"Posibilidad de ser comandado fuera de su hogar mediante el Control Universal Broadlink RM Pro",
+			"Posibilidad de ser encendido automáticamente si se detecta oscuridad a una hora programada utilizando el Sensor de Ambiente Broadlink A1",
+			"Posibilidad de ser encendido automáticamente si se detecta movimiento, o apertura de puerta o ventana utilizando el Kit de Alarma Broadlink S1",
+			"Activación con voz si se utiliza con Broadlink RM Pro y App Intermedia RM Tasker"
 		]
 	}
 };
@@ -944,6 +1029,10 @@ router.get('/motionsensor', function(req, res, next) {
 
 router.get('/remote1', function(req, res, next) {
   res.render('product', remote1);
+});
+
+router.get('/tactilswitch', function(req, res, next) {
+  res.render('product', tactilSwitch);
 });
 
 router.get('/soporte', function(req, res, next) {
