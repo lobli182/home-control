@@ -12,10 +12,10 @@ append body-content
 		h1 #{title}
 
 		ul.nav.nav-tabs.product-nav
-			li.item-nav.active(role='presentation', value="product-general")
+			li.item-nav.active(role='presentation', value="product-general", name=title)
 				a(href="javascript:void(0);") General
-			li.item-nav(role='presentation', value="product-technical-data")
-				a(href="javascript:void(0);") Datos Tecnicos
+			li.item-nav(role='presentation', value="product-technical-data", name=title)
+				a(href="javascript:void(0);") Datos Tecnicos / Catacterísticas
 
 		.product-general
 
