@@ -13,4 +13,14 @@ $(document).ready(function() {
 		$(".product-nav .item-nav").removeClass("active");
 		$(elem).addClass("active");
 	});
+
+	$(".mercado-libre-btn a").click(function(e) {
+		var name = $(this).attr("name");
+		ga('send', {
+		  hitType: 'event',
+		  eventCategory: 'Product',
+		  eventAction: 'Comprar',
+		  eventLabel: name
+		});
+	});
 });
