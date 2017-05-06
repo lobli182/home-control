@@ -197,4 +197,18 @@ hr.navbar-divider {
 	    padding: 12px;
 	}
 
+	.product-technical-data .values .header p.val {
+		height: auto;
+		margin: 0;
+	}
+
+	.product-technical-data .values p {
+    	height: auto;
+	}
+	.product-technical-data .values .values p.val {
+		height: auto;
+		margin: 10px 0;
+		margin-left: 20px;
+	}
+
 }

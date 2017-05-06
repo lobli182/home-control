@@ -28,18 +28,21 @@ append body-content
 			.col-md-2.vertical-header
 				label Especificaciones
 			.col-md-10.values
-				.col-md-3.header
-					for e in datosTecnicos.esp.headers1
-						p #{e}
-				.col-md-2.values
-					for v in datosTecnicos.esp.values1
-						p #{v}
-				.col-md-3.header
-					for e in datosTecnicos.esp.headers2
-						p #{e}
-				.col-md-2.value
-					for v in datosTecnicos.esp.values2
-						p #{v}
+				- var length = datosTecnicos.esp.headers1.length
+				- for (var i = 0; i < length; ++i) {
+					.col-md-3.header
+						p.val #{datosTecnicos.esp.headers1[i]}
+					.col-md-3.values
+						p.val #{datosTecnicos.esp.values1[i]}
+				- }
+
+				- for (var i = 0; i < length; ++i) {
+					.col-md-3.header
+						p.val #{datosTecnicos.esp.headers2[i]}
+
+					.col-md-3.values
+						p.val #{datosTecnicos.esp.values2[i]}
+				- }
 
 			.col-md-2.vertical-header
 				label Dimensiones
