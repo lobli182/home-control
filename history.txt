@@ -1,0 +1,382 @@
+    1  apt-get install git
+    2  sudo apt-get install git
+    3  ls
+    4  git clone https://github.com/lobli182/home-control.git
+    5  ls
+    6  cd home-control/
+    7  npm install
+    8  apt-get install nodejs
+    9  sudo apt-get install nodejs
+   10  npm install
+   11  sudo apt-get install npm
+   12  apt-get update
+   13  sudo apt-get update
+   14  sudo apt-get install npm
+   15  cd home-control/
+   16  npm install
+   17  npm start
+   18  npm install -g express-generator
+   19  sudo npm install -g express-generator
+   20  npm install
+   21  npm start
+   22  sudo npm start
+   23  sudo npm install
+   24  sudo npm start
+   25  nano /home/ubuntu/home-control/npm-debug.log
+   26  sudo apt-get install nodejs
+   27  sudo apt-get update
+   28  sudo apt-get install nodejs
+   29  node -v
+   30  sudo apt install nodejs-legacy
+   31  node -v
+   32  curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+   33  sudo apt-get install -y nodejs
+   34  sudo apt-get install -y build-essential
+   35  npm install
+   36  npm start
+   37  git pull origin master
+   38  npm install
+   39  npm start
+   40  git pull origin master
+   41  npm start
+   42  sudo nano /etc/init/homecontrol.conf
+   43  pws
+   44  pw
+   45  ls
+   46  ls -d
+   47  pwd
+   48  npm start &
+   49  cd home-control/
+   50  ls
+   51  sudo npm install forever -g
+   52  forever start ./bin/www 
+   53  forever list
+   54  exit
+   55  sudo apt-get install postfix
+   56  service postfix status
+   57  nano /var/log/mail.log
+   58  sudo nano usr/share/postfix/main.cf.dist
+   59  cd /etc/postfix
+   60  ls
+   61  sudo nano main.cf
+   62  sudo nano /usr/share/postfix/main.cf.dist
+   63  sudo dpkg-reconfigure postfix
+   64  sudo nano /etc/aliases
+   65  service postfix restart
+   66  ll
+   67  service postfix restart
+   68  sudo service postfix restart
+   69  sudo service postfix status
+   70  postconf
+   71  sudo useradd -m lorena
+   72  passwd lorena
+   73  sudo passwd lorena
+   74  telnet localhost 25
+   75  cd /var
+   76  cd spool/
+   77  ls
+   78  cd mail
+   79  ls
+   80  cat lorena
+   81  cd ..
+   82  cat /var/spool/mail/lorena
+   83  sudo cat /var/spool/mail/lorena
+   84  cd /var/spool/
+   85  ls
+   86  cd mail
+   87  ls -a
+   88  telnet localhost 25
+   89  ls
+   90  postconf
+   91  cd ..
+   92  ls
+   93  cd mail/
+   94  ls
+   95  ls -a
+   96  cd ..
+   97  ls
+   98  cd spool/
+   99  ls
+  100  cd postfix/
+  101  ls
+  102  cd maildrop/
+  103  sudo cd maildrop/
+  104  cd ..
+  105  cd mail
+  106  ls
+  107  where lorena
+  108  gwhere lorena
+  109  sudo apt-get install gwhere
+  110  gwhere lorena
+  111  sudo gwhere lorena
+  112  sudo nano /var/mail/lorena
+  113  cd var/mail
+  114  cd /var/mail/lorena
+  115  cd /var/spool/postfix/lorena
+  116  cd /var/spool/postfix/
+  117  ls
+  118  cd usr
+  119  ls
+  120  cd ..
+  121  cd incoming/
+  122  cd maildrop/
+  123  ls
+  124  cd deferred/
+  125  sudo postconf
+  126  sudo postconf -e "home_mailbox = /var/mail/"
+  127  sudo postconf
+  128  telnet localhost 25
+  129  cd ..
+  130  cd mail/
+  131  ls
+  132  cd lorena
+  133  sudo nano /etc/dovecot/dovecot.conf
+  134  sudo apt-get install dovecot
+  135  cd home-control/
+  136  ls
+  137  git status
+  138  git pull origin master
+  139  ps aux
+  140  forever list
+  141  forever stop 28179
+  142  ps aux
+  143  forever start ./bin/www 
+  144  forever list
+  145  forever stop 7221
+  146  ls
+  147  cd bin
+  148  nano www
+  149  cd ..
+  150  forever start ./bin/www 
+  151  forever list
+  152  nano /home/ubuntu/.forever/z_lX.log
+  153  cd bin
+  154  nano www
+  155  cd ..
+  156  forever start ./bin/www
+  157  forever list
+  158  forever stop 7268
+  159  sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 3000
+  160  sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8080
+  161  forever stop 7305
+  162  cd bin
+  163  nano www
+  164  cd ..
+  165  forever start ./bin/www
+  166  curl localhost:3000
+  167  exit
+  168  cd home-control/
+  169  forever list
+  170  forever stop 7384
+  171  git pull origin master
+  172  git checkout bin/www
+  173  git pull origin master
+  174  forever start ./bin/www
+  175  ls
+  176  cd routes/
+  177  ls
+  178  nano service.js 
+  179  forever list
+  180  forever stop 20287
+  181  cd ..
+  182  forever start ./bin/www
+  183  forever list
+  184  forever st
+  185  git pull origin master
+  186  forever start ./bin/www
+  187  forever list
+  188  nano /home/ubuntu/.forever/NYH4.log
+  189  nano routes/service.js 
+  190  npm install
+  191  ls
+  192  nano package.json 
+  193  npm install nodemailer
+  194  forever list
+  195  forever stop 20423
+  196  forever start ./bin/www
+  197  nano  /home/ubuntu/.forever/NYH4.lo
+  198  nano  /home/ubuntu/.forever/NYH4.log
+  199  forever list
+  200  nano /home/ubuntu/.forever/P0IO.log
+  201  nano routes/service.js 
+  202  forever stop 205338
+  203  forever stop 20538
+  204  npm start
+  205  npm install nodemailer-smtp-transport
+  206  nano routes/service.js 
+  207  npm start
+  208  ls
+  209  npm install
+  210  npm start
+  211  nano routes/service.js 
+  212  npm start
+  213  nano routes/service.js 
+  214  npm start
+  215  nano routes/service.js 
+  216  cd home-control/
+  217  npm start
+  218  forever list
+  219  forever start ./bin/www
+  220  git status
+  221  forever list
+  222  forever stop 22986
+  223  git pull origin master
+  224  forever start ./bin/www
+  225  forever list
+  226  forever stop 23071
+  227  git pull origin master
+  228  forever start ./bin/www
+  229  ls
+  230  cd home-control/
+  231  forever list
+  232  forever stop 23122
+  233  git pull origin master
+  234  git status
+  235  git stash
+  236  git pull origin master
+  237  git stash pop
+  238  git status
+  239  nano routes/service.js 
+  240  npm start
+  241  forever list
+  242  forever stop 23128
+  243  npm start
+  244  forever start ./bin/www
+  245  exit
+  246  cd home-control/
+  247  forever list
+  248  forever stop 5441
+  249  forever list
+  250  git pull origin master
+  251  git status
+  252  git stash
+  253  git pop
+  254  git stash pop
+  255  git mergetool
+  256  nano routes/service.js
+  257  npm start
+  258  forever start ./bin/www
+  259  forever list
+  260  forever stop 32450
+  261  git pull origin master
+  262  forever start ./bin/www
+  263  forever list
+  264  forever stop 32501
+  265  cd home-control/
+  266  git pull origin master
+  267  forever start ./bin/www
+  268  ls
+  269  cd public/images/accesories/
+  270  ls
+  271  cd ..
+  272  forever list
+  273  forever stop 10596
+  274  git pull origin master
+  275  forever start ./bin/www
+  276  cd views/layouts
+  277  nano master.jade 
+  278  git status
+  279  cd ..
+  280  git status
+  281  git add views/
+  282  git status
+  283  git reset HEAD routes/service.js
+  284  git status
+  285  git commit -m "title"
+  286  git push origin master
+  287  nano views/layouts/master.jade 
+  288  git status
+  289  git add views/
+  290  git status
+  291  git commit -m "adding description"
+  292  git push origin master
+  293  cd Home
+  294  cd home-control/
+  295  cd views/layouts/
+  296  ls
+  297  nano master.jade 
+  298  cd ..
+  299  git pull origin master
+  300  forever lisr
+  301  forever list
+  302  forever stop 10666
+  303  git pull origin master
+  304  forever start ./bin/www
+  305  forever list 
+  306  forever stop 28610
+  307  git pull origin master
+  308  forever start ./bin/www
+  309  exit
+  310  cd home-control/
+  311  ls
+  312  cd ..
+  313  git pull origin master
+  314  cd home-control/
+  315  git pull origin master
+  316  exit
+  317  ls
+  318  cp mendieta.zip home-control/public/
+  319  cd home-control/public/
+  320  ls
+  321  unzip mendieta.zip 
+  322  apt install unzip
+  323  sudo apt install unzip
+  324  apt install unzip
+  325  unzip mendieta.zip 
+  326  ls
+  327  lscd ..
+  328  cd ..
+  329  ls
+  330  cp cuadrilla.mp3 home-control/public/mendieta/media/ymanejar.mp3
+  331  cd home-control/
+  332  cd public/mendieta/
+  333  ls
+  334  nano index.html 
+  335  cd ..
+  336  cp sapo.jpeg home-control/public/mendieta/img/
+  337  cd home-control/public/mendieta/
+  338  nano index.html 
+  339  ls
+  340  cd home-control/
+  341  ls
+  342  cd public/
+  343  ls
+  344  cp -rf mendieta mendieta1
+  345  ls
+  346  rm -rf mendieta
+  347  ls
+  348  forever list 
+  349  cd home-control/
+  350  ls
+  351  forever start ./bin/www
+  352  forever list
+  353  curl http://localhost
+  354  curl http://localhost:3000
+  355  cd ..
+  356  history
+  357  forever list
+  358  forever stop 2732
+  359  forever stop 2738
+  360  forever list
+  361  sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 3000
+  362  sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8080
+  363  forever start ./bin/www
+  364  cd home-control/
+  365  forever start ./bin/www
+  366  exit
+  367  ls
+  368  cd home-control/
+  369  git status
+  370  git diff
+  371  git status
+  372  git pull origin master
+  373  forever list
+  374  forever kill 2836
+  375  forever kill 2830
+  376  forever stop 2830
+  377  forever stop 2836
+  378  forever list
+  379  forever start ./bin/www
+  380  ls
+  381  forever list
+  382  history > history.txt
