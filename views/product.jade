@@ -11,19 +11,13 @@ append body-content
 	.container
 		h1 #{title}
 
-		ul.nav.nav-tabs.product-nav
-			li.item-nav.active(role='presentation', value="product-general", name=title)
-				a(href="javascript:void(0);") General
-			li.item-nav(role='presentation', value="product-technical-data", name=title)
-				a(href="javascript:void(0);") Catacterísticas
-
 		.product-general
 
 			for image in images
 				img(src=image.src, alt=image.alt)
 
-		.product-technical-data.hidden
-			h3 Catacterísticas
+		.product-technical-data
+			h2 Datos Técnicos / Catacterísticas
 
 			.col-md-2.vertical-header
 				label Especificaciones
@@ -57,10 +51,10 @@ append body-content
 			.col-md-2.vertical-header
 				label Características
 			.col-md-10.values
-				ul
+				ul.prod-tec
 					for car in datosTecnicos.characteristics
-						li
-							p #{car}
+						li.dat-tec
+							p.dat-tec-li #{car}
 
 append scripts
 	script(src="../../js/product.js")

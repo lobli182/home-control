@@ -9,11 +9,14 @@ append body-content
 			li(data-target='#myCarousel', data-slide-to='2')
 		.carousel-inner(role='listbox')
 			.item.active
-				img.carousel-img.first-slide(src='images/Carousel_1.jpg', alt='First slide')
+				a#image-btn1(href='/rmpro', role='button')
+					img.carousel-img.first-slide(src='images/Carousel_1.jpg', alt='First slide')
 			.item
-				img.carousel-img.second-slide(src='images/Carousel_2.jpg', alt='Second slide')
+				a#image-btn2(href='/spmini', role='button')
+					img.carousel-img.second-slide(src='images/Carousel_2.jpg', alt='Second slide')
 			.item
-				img.carousel-img.third-slide(src='images/Carousel_3.jpg', alt='Third slide')
+				a#image-btn3(href='/alarmkit', role='button')
+					img.carousel-img.third-slide(src='images/Carousel_3.jpg', alt='Third slide')
 
 		a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
 			span.glyphicon.glyphicon-chevron-left(aria-hidden='true')

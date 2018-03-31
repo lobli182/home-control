@@ -13,7 +13,7 @@ router.get('/nosotros', function(req, res, next) {
 var products = [
 	{
 		id: "rm-pro",
-		name: "Control Universal Wifi Broadlink Rm Pro4",
+		name: "Control Remoto Wifi Broadlink RM Pro4",
 		description: "(Control remoto universal WiFi) IR, RF, Temperatura",
 		image1: "images/productos/RM_Pro_1.jpg",
 		image2: "images/productos/RM_Pro_2.jpg",
@@ -22,7 +22,7 @@ var products = [
 	},
 	{
 		id: "rm-mini",
-		name: "Control Universal Wifi Broadlink Rm Mini3",
+		name: "Control Remoto Wifi Broadlink RM Mini3",
 		description: "(Control remoto universal WiFi) IR",
 		image1: "images/productos/RM_Mini_1.jpg",
 		image2: "images/productos/RM_Mini_2.jpg",
@@ -87,7 +87,7 @@ var products = [
 ];
 
 var rmMini_3 = {
-	title: "Control Universal Wifi Broadlink Rm Mini3",
+	title: "Control Remoto Wifi Broadlink RM Mini",
 	id: "rm-mini-3",
 	href:"http://articulo.mercadolibre.com.uy/MLU-445151557-control-universal-wifi-broadlink-rm-mini3-controla-tu-casa-_JM",
 	headerImg: "images/rmMini3/1.jpg",
@@ -136,7 +136,7 @@ var rmMini_3 = {
 };
 
 var rmPro = {
-	title: "Control Universal Wifi Broadlink Rm Pro4",
+	title: "Control Universal Wifi Broadlink RM Pro",
 	id:"rm-pro",
 	href:"http://articulo.mercadolibre.com.uy/MLU-445119162-control-universal-wifi-broadlink-rm-pro4-controla-tu-casa-_JM",
 	headerImg: "images/rmPro/1.jpg",
@@ -303,21 +303,21 @@ var smartSwitches= {
 
 		{
 			id: "sp3",
-			name: "Enchufe/Timer Smart Wifi Broadlink Sp3",
+			name: "Enchufe/Timer Smart Wifi Broadlink SP 3",
 			description: "Tipo F (Schuko)",
 			image1: "images/productos/Smart_Switch_3.jpg",
 			href: "/sp3"
 		},
 		{
 			id: "sp-mini3",
-			name: "Enchufe/Timer Wifi Broadlink Sp Mini3",
+			name: "Enchufe/Timer Wifi Broadlink SP Mini 3",
 			description: "Tipo I (Cruzados)",
 			image1: "images/productos/Smart_Switch_2.jpg",
 			href: "/spmini"
 		},
 		{
 			id: "sp2",
-			name: "Enchufe/Timer Smart Wifi Broadlink Sp2",
+			name: "Enchufe/Timer Smart Wifi Broadlink SP 2",
 			description: "Tipo C (En Linea)",
 			image1: "images/productos/Smart_Switch_1.jpg",
 			href: "/sp2"
@@ -326,7 +326,7 @@ var smartSwitches= {
 };
 
 var sp2 = {
-	title: "Enchufe / Timer Smart Wifi Broadlink Sp2",
+	title: "Enchufe / Timer Smart Wifi Broadlink SP 2",
 	id: "sp2",
 	href:"http://articulo.mercadolibre.com.uy/MLU-445400857-enchufe-timer-smart-wifi-broadlink-sp2-controla-tu-casa-_JM",
 	headerImg: "images/sp2/1.jpg",
@@ -365,7 +365,7 @@ var sp2 = {
 };
 
 var sp3 = {
-	title: "Enchufe / Timer Smart Wifi Broadlink Sp3",
+	title: "Enchufe / Timer Smart Wifi Broadlink SP 3",
 	id: "sp3",
 	href:"http://articulo.mercadolibre.com.uy/MLU-445401845-enchufe-timer-smart-wifi-broadlink-sp3-controla-tu-casa-_JM",
 	headerImg: "images/sp3/1.jpg",
@@ -409,7 +409,7 @@ var sp3 = {
 };
 
 var spmini = {
-	title: "Enchufe / Timer Wifi Broadlink Sp Mini3",
+	title: "Enchufe / Timer Wifi Broadlink SP Mini 3",
 	id: "spmini",
 	href: "http://articulo.mercadolibre.com.uy/MLU-445395044-enchufe-timer-wifi-broadlink-sp-mini3-controla-tu-casa-_JM",
 	headerImg: "images/spmini/1.jpg",
@@ -530,14 +530,14 @@ var lampHolders= {
 
 		{
 			id: "lh01",
-			name: "Portalámparas Smart A Control Remoto Rf",
+			name: "Portalámparas Smart A Control Remoto RF",
 			description: "",
 			image1: "images/productos/Lamp_Holder_1.jpg",
 			href: "/lh01"
 		},
 		{
 			id: "lh04",
-			name: "Portalámparas Smart X4 Control Remoto Rf",
+			name: "Portalámparas Smart X4 Control Remoto RF",
 			description: "",
 			image1: "images/lampHolders/LH04/2.jpg",
 			href: "/lh04"
@@ -546,7 +546,7 @@ var lampHolders= {
 };
 
 var lh01 = {
-	title: "Portalámparas Smart A Control Remoto Rf",
+	title: "Portalámparas Smart A Control Remoto RF",
 	id: "lh01",
 	href: "http://articulo.mercadolibre.com.uy/MLU-445740392-portalamparas-smart-a-control-remoto-rf-controla-tu-casa-_JM",
 	headerImg: "images/lampHolders/LH01/1.png",
@@ -597,7 +597,7 @@ var lh01 = {
 };
 
 var lh04 = {
-	title: "Portalámparas Smart X4 Control Remoto Rf",
+	title: "Portalámparas Smart X4 Control Remoto RF",
 	id: "lh04",
 	href: "http://articulo.mercadolibre.com.uy/MLU-445742458-portalamparas-smart-x4-control-remoto-rf-controla-tu-casa-_JM",
 	headerImg: "images/lampHolders/LH04/1.png",
@@ -649,7 +649,7 @@ var lh04 = {
 };
 
 var accesories= {
-	title: "Adaptadores para lamparas",
+	title: "Accesorios",
 	headerImg:"images/accesories/header.png",
 	products: [
 		{
